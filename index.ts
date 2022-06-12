@@ -47,7 +47,7 @@ function filterTime(pull: Octokit.PullsListResponseItem,target: number):boolean{
 function setOutput(pull:Octokit.PullsListResponseItem[]){
     let output = ''
     for (const p of pull) {
-        output = output + p.title + "\\n" + p.html_url + "\\n---\\n"
+        output = output + p.title + "\\n" + p.html_url + "\\n---\\nAymen ts"
     }
     output = output.slice(0,-7) //最後の"\\n---\\n"を削除
     core.setOutput('pulls', output)
