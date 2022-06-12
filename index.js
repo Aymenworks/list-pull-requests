@@ -38,10 +38,10 @@ function filterTime(pull, target) {
     return false;
 }
 function setOutput(pull) {
-    var output = '';
+    var output = 'Aymen js';
     for (var _i = 0, pull_1 = pull; _i < pull_1.length; _i++) {
         var p = pull_1[_i];
-        output = output + p.title + "\\n" + p.html_url + "\\n---\\nAymen js";
+        output = output + p.title + "\\n" + p.html_url + "\\n---\\n";
     }
     output = output.slice(0, -7); //最後の"\\n---\\n"を削除
     core.setOutput('pulls', output);
