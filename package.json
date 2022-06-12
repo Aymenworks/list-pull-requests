@@ -1,5 +1,5 @@
 {
-  "name": "list-pull-requests",
+  "name": "merge-staging-pull-requests",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
